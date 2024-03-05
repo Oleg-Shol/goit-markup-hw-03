@@ -1,11 +1,12 @@
+/* Index html */
 /* hero */
 .hero {
   background-color: var(--bg-second-color);
   /* text-align: center; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
+  align-items: center;
+  height: 600px;
 }
 
 .hero h1 {
@@ -16,10 +17,21 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 696px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 /* button */
 .hero .button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  font-family: 'Roboto', sans-serif;
+  border: none;
   background-color: var(--active-color);
   color: var(--bg-main-color);
   font-weight: 700;
@@ -27,23 +39,33 @@
   line-height: 1.87;
   cursor: pointer;
   letter-spacing: 0.06em;
-  border: none;
+  text-align: center;
+  min-width: 216px;
 }
 
 /* features */
+.features {
+  padding-top: 94px;
+}
 .features h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.features p {
+  margin: 0px;
 }
 
+/* <!-- What we do --> */
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 /* team */
@@ -64,13 +86,46 @@
   letter-spacing: 0.03em;
 }
 
+/* Second page */
+/* Porfolio html */
+
+.portfolio-filter {
+  margin-bottom: 50px;
+}
+.portfolio-filter .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.portfolio-filter .button {
+  display: inline-block;
+  min-width: 73px;
+  color: #212121;
+  background-color: #F5F4FA;
+  border:none;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 6px 22px;
+}
+
+.portfolio-filter li:not(:first-child) {
+  margin-left: 8px;
+}
+
 /* project */
 .project h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-bottom: 4px;
+  margin: 20px 24px 4px 24px;
 }
 
 .project p {
@@ -78,4 +133,22 @@
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin: 0px 24px 20px 24px;
+}
+
+.project .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project li {
+  border: 1px solid rgb(238, 238, 238);
+  width: calc((100% - 60px) / 3);
+}
+
+.project li:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.project li:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
