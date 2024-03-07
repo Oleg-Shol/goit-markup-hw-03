@@ -46,6 +46,7 @@
 /* features */
 .features {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .features h3 {
   font-weight: 700;
@@ -53,9 +54,15 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  
+}
+
+.features li:not(:first-child) {
+  margin-left: 30px;
 }
 .features p {
   margin: 0px;
+  
 }
 
 /* <!-- What we do --> */
@@ -68,6 +75,10 @@
   margin-bottom: 50px;
 }
 
+.in-section li:not(:first-child) {
+  margin-left: 30px;
+}
+
 /* team */
 .team {
   background-color: var(--bg-light-color);
@@ -77,6 +88,9 @@
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team p {
@@ -84,6 +98,17 @@
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team li {
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.team li:not(:first-child) {
+  margin-left: 30px;
 }
 
 /* Second page */
@@ -96,15 +121,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
 
 .portfolio-filter .button {
   display: inline-block;
   min-width: 73px;
   color: #212121;
-  background-color: #F5F4FA;
-  border:none;
+  background-color: #f5f4fa;
+  border: none;
   border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -113,6 +137,14 @@
   letter-spacing: 0.03em;
   text-align: center;
   padding: 6px 22px;
+
+}
+
+.portfolio-filter .button:hover,
+.portfolio-filter .button:focus {
+background-color: #2196F3;
+color: #ffffff;
+
 }
 
 .portfolio-filter li:not(:first-child) {
